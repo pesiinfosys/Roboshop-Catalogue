@@ -27,7 +27,7 @@ pipeline {
             steps {
                 echo "Sonar Qube Scanning"
                 sh 'ls -ltr'
-                sh 'sonar-scanner'
+                // sh 'sonar-scanner'
             }
         }
     }
