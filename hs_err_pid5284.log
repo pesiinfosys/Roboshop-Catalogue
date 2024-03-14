@@ -1,0 +1,506 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32784 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (arena.cpp:191), pid=5284, tid=3900
+#
+# JRE version: OpenJDK Runtime Environment Temurin-17.0.10+7 (17.0.10+7) (build 17.0.10+7)
+# Java VM: OpenJDK 64-Bit Server VM Temurin-17.0.10+7 (17.0.10+7, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, serial gc, windows-amd64)
+# Core dump will be written. Default location: c:\Users\Administrator\Desktop\Repos\CICD\Catalogue\hs_err_pid5284.mdmp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Xms256m -Xmx2048m c:\Users\Administrator\.vscode\extensions\nicolasvuillamy.vscode-groovy-lint-3.2.3\server\node_modules\npm-groovy-lint\lib/java/CodeNarcServer.jar --file C:\Users\ADMINI~1\AppData\Local\Temp\2\npm-groovy-lint\codeNarcTmpDir_0.6906741472646214\Jenkinsfile --parse -basedir=C:\Users\ADMINI~1\AppData\Local\Temp\2\npm-groovy-lint\codeNarcTmpDir_0.6906741472646214 -ruleset=%7B%22AbstractClassName%22%3A%7B%7D%2C%22AbstractClassWithoutAbstractMethod%22%3A%7B%7D%2C%22AbstractClassWithPublicConstructor%22%3A%7B%7D%2C%22AddEmptyString%22%3A%7B%7D%2C%22AssertWithinFinallyBlock%22%3A%7B%7D%2C%22AssignCollectionSort%22%3A%7B%7D%2C%22AssignCollectionUnique%22%3A%7B%7D%2C%22AssignmentInConditional%22%3A%7B%7D%2C%22AssignmentToStaticFieldFromInstanceMethod%22%3A%7B%7D%2C%22BigDecimalInstantiation%22%3A%7B%7D%2C%22BitwiseOperatorInConditional%22%3A%7B%7D%2C%22BlankLineBeforePackage%22%3A%7B%7D%2C%22BlockEndsWithBlankLine%22%3A%7B%7D%2C%22BlockStartsWithBlankLine%22%3A%7B%7D%2C%22BooleanGetBoolean%22%3A%7B%7D%2C%22BooleanMethodReturnsNull%22%3A%7B%7D%2C%22BracesForClass%22%3A%7B%22priority%22%3A3%7D%2C%22BracesForForLoop%22%3A%7B%22priority%22%3A3%7D%2C%22BracesForIfElse%22%3A%7B%22priority%22%3A3%7D%2C%22BracesForMethod%22%3A%7B%22priority%22%3A3%7D%2C%22BracesForTryCatchFinally%22%3A%7B%22priority%22%3A3%7D%2C%22BrokenNullCheck%22%3A%7B%7D%2C%22BrokenOddnessCheck%22%3A%7B%7D%2C%22BuilderMethodWithSideEffects%22%3A%7B%7D%2C%22BusyWait%22%3A%7B%7D%2C%22CatchArrayIndexOutOfBoundsException%22%3A%7B%7D%2C%22CatchError%22%3A%7B%7D%2C%22CatchException%22%3A%7B%7D%2C%22CatchIllegalMonitorStateException%22%3A%7B%7D%2C%22CatchIndexOutOfBoundsException%22%3A%7B%7D%2C%22CatchNullPointerException%22%3A%7B%7D%2C%22CatchRuntimeException%22%3A%7B%7D%2C%22CatchThrowable%22%3A%7B%7D%2C%22ChainedTest%22%3A%7B%7D%2C%22ClassEndsWithBlankLine%22%3A%7B%7D%2C%22ClassForName%22%3A%7B%7D%2C%22ClassJavadoc%22%3A%7B%7D%2C%22ClassName%22%3A%7B%7D%2C%22ClassNameSameAsFilename%22%3A%7B%7D%2C%22ClassNameSameAsSuperclass%22%3A%7B%7D%2C%22ClassSize%22%3A%7B%7D%2C%22ClassStartsWithBlankLine%22%3A%7B%7D%2C%22CloneableWithoutClone%22%3A%7B%7D%2C%22CloneWithoutCloneable%22%3A%7B%7D%2C%22CloseWithoutCloseable%22%3A%7B%7D%2C%22ClosureAsLastMethodParameter%22%3A%7B%7D%2C%22ClosureStatementOnOpeningLineOfMultipleLineClosure%22%3A%7B%7D%2C%22CollectAllIsDeprecated%22%3A%7B%7D%2C%22CompareToWithoutComparable%22%3A%7B%7D%2C%22ComparisonOfTwoConstants%22%3A%7B%7D%2C%22ComparisonWithSelf%22%3A%7B%7D%2C%22CompileStatic%22%3A%7B%22priority%22%3A3%7D%2C%22ConfusingClassNamedException%22%3A%7B%7D%2C%22ConfusingMethodName%22%3A%7B%7D%2C%22ConfusingMultipleReturns%22%3A%7B%7D%2C%22ConfusingTernary%22%3A%7B%7D%2C%22ConsecutiveBlankLines%22%3A%7B%7D%2C%22ConsecutiveLiteralAppends%22%3A%7B%7D%2C%22ConsecutiveStringConcatenation%22%3A%7B%7D%2C%22ConstantAssertExpression%22%3A%7B%7D%2C%22ConstantIfExpression%22%3A%7B%7D%2C%22ConstantsOnlyInterface%22%3A%7B%7D%2C%22ConstantTernaryExpression%22%3A%7B%7D%2C%22CouldBeElvis%22%3A%7B%7D%2C%22CouldBeSwitchStatement%22%3A%7B%7D%2C%22CoupledTestCase%22%3A%7B%7D%2C%22DeadCode%22%3A%7B%22priority%22%3A1%7D%2C%22DirectConnectionManagement%22%3A%7B%7D%2C%22DoubleCheckedLocking%22%3A%7B%7D%2C%22DoubleNegative%22%3A%7B%7D%2C%22DuplicateCaseStatement%22%3A%7B%7D%2C%22DuplicateImport%22%3A%7B%7D%2C%22DuplicateListLiteral%22%3A%7B%22priority%22%3A3%7D%2C%22DuplicateMapKey%22%3A%7B%7D%2C%22DuplicateMapLiteral%22%3A%7B%22priority%22%3A2%7D%2C%22DuplicateNumberLiteral%22%3A%7B%22priority%22%3A3%2C%22ignoreNumbers%22%3A%5B0%2C1%2C2%2C3%2C-1%5D%7D%2C%22DuplicateSetValue%22%3A%7B%7D%2C%22DuplicateStringLiteral%22%3A%7B%22priority%22%3A3%7D%2C%22ElseBlockBraces%22%3A%7B%7D%2C%22EmptyCatchBlock%22%3A%7B%7D%2C%22EmptyClass%22%3A%7B%7D%2C%22EmptyElseBlock%22%3A%7B%7D%2C%22EmptyFinallyBlock%22%3A%7B%7D%2C%22EmptyForStatement%22%3A%7B%7D%2C%22EmptyIfStatement%22%3A%7B%7D%2C%22EmptyInstanceInitializer%22%3A%7B%7D%2C%22EmptyMethod%22%3A%7B%7D%2C%22EmptyMethodInAbstractClass%22%3A%7B%7D%2C%22EmptyStaticInitializer%22%3A%7B%7D%2C%22EmptySwitchStatement%22%3A%7B%7D%2C%22EmptySynchronizedStatement%22%3A%7B%7D%2C%22EmptyTryBlock%22%3A%7B%7D%2C%22EmptyWhileStatement%22%3A%7B%7D%2C%22EnumCustomSerializationIgnored%22%3A%7B%7D%2C%22EqualsAndHashCode%22%3A%7B%7D%2C%22EqualsOverloaded%22%3A%7B%7D%2C%22ExceptionExtendsError%22%3A%7B%7D%2C%22ExceptionExtendsThrowable%22%3A%7B%7D%2C%22ExceptionNotThrown%22%3A%7B%7D%2C%22ExplicitArrayListInstantiation%22%3A%7B%7D%2C%22ExplicitCallToAndMethod%22%3A%7B%7D%2C%22ExplicitCallToCompareToMethod%22%3A%7B%7D%2C%22ExplicitCallToDivMethod%22%3A%7B%7D%2C%22ExplicitCallToEqualsMethod%22%3A%7B%22priority%22%3A3%7D%2C%22ExplicitCallToGetAtMethod%22%3A%7B%7D%2C%22ExplicitCallToLeftShiftMethod%22%3A%7B%7D%2C%22ExplicitCallToMinusMethod%22%3A%7B%7D%2C%22ExplicitCallToModMethod%22%3A%7B%7D%2C%22ExplicitCallToMultiplyMethod%22%3A%7B%7D%2C%22ExplicitCallToOrMethod%22%3A%7B%7D%2C%22ExplicitCallToPlusMethod%22%3A%7B%7D%2C%22ExplicitCallToPowerMethod%22%3A%7B%7D%2C%22ExplicitCallToPutAtMethod%22%3A%7B%7D%2C%22ExplicitCallToRightShiftMethod%22%3A%7B%7D%2C%22ExplicitCallToXorMethod%22%3A%7B%7D%2C%22ExplicitGarbageCollection%22%3A%7B%7D%2C%22ExplicitHashMapInstantiation%22%3A%7B%7D%2C%22ExplicitHashSetInstantiation%22%3A%7B%7D%2C%22ExplicitLinkedHashMapInstantiation%22%3A%7B%7D%2C%22ExplicitLinkedListInstantiation%22%3A%7B%7D%2C%22ExplicitStackInstantiation%22%3A%7B%7D%2C%22ExplicitTreeSetInstantiation%22%3A%7B%7D%2C%22FactoryMethodName%22%3A%7B%7D%2C%22FieldName%22%3A%7B%7D%2C%22FieldTypeRequired%22%3A%7B%22priority%22%3A3%7D%2C%22FileCreateTempFile%22%3A%7B%7D%2C%22FileEndsWithoutNewline%22%3A%7B%7D%2C%22FinalClassWithProtectedMember%22%3A%7B%7D%2C%22ForLoopShouldBeWhileLoop%22%3A%7B%7D%2C%22ForStatementBraces%22%3A%7B%7D%2C%22GetterMethodCouldBeProperty%22%3A%7B%7D%2C%22GrailsDomainGormMethods%22%3A%7B%7D%2C%22GrailsDomainHasEquals%22%3A%7B%7D%2C%22GrailsDomainHasToString%22%3A%7B%7D%2C%22GrailsDomainReservedSqlKeywordName%22%3A%7B%7D%2C%22GrailsDomainStringPropertyMaxSize%22%3A%7B%7D%2C%22GrailsDomainWithServiceReference%22%3A%7B%7D%2C%22GrailsDuplicateConstraint%22%3A%7B%7D%2C%22GrailsDuplicateMapping%22%3A%7B%7D%2C%22GrailsMassAssignment%22%3A%7B%7D%2C%22GrailsPublicControllerMethod%22%3A%7B%7D%2C%22GrailsServletContextReference%22%3A%7B%7D%2C%22GrailsStatelessService%22%3A%7B%7D%2C%22GroovyLangImmutable%22%3A%7B%7D%2C%22GStringAsMapKey%22%3A%7B%7D%2C%22GStringExpressionWithinString%22%3A%7B%7D%2C%22HardCodedWindowsFileSeparator%22%3A%7B%7D%2C%22HardCodedWindowsRootDirectory%22%3A%7B%7D%2C%22HashtableIsObsolete%22%3A%7B%7D%2C%22IfStatementBraces%22%3A%7B%7D%2C%22IfStatementCouldBeTernary%22%3A%7B%22priority%22%3A3%7D%2C%22IllegalClassMember%22%3A%7B%7D%2C%22IllegalClassReference%22%3A%7B%7D%2C%22IllegalPackageReference%22%3A%7B%7D%2C%22IllegalRegex%22%3A%7B%7D%2C%22IllegalString%22%3A%7B%7D%2C%22IllegalSubclass%22%3A%7B%7D%2C%22ImplementationAsType%22%3A%7B%7D%2C%22ImplicitClosureParameter%22%3A%7B%7D%2C%22ImplicitReturnStatement%22%3A%7B%7D%2C%22ImportFromSamePackage%22%3A%7B%7D%2C%22ImportFromSunPackages%22%3A%7B%7D%2C%22InconsistentPropertyLocking%22%3A%7B%7D%2C%22InconsistentPropertySynchronization%22%3A%7B%7D%2C%22Indentation%22%3A%7B%22priority%22%3A3%2C%22spacesPerIndentLevel%22%3A4%2C%22enabled%22%3Atrue%7D%2C%22InsecureRandom%22%3A%7B%7D%2C%22Instanceof%22%3A%7B%7D%2C%22IntegerGetInteger%22%3A%7B%7D%2C%22InterfaceName%22%3A%7B%7D%2C%22InterfaceNameSameAsSuperInterface%22%3A%7B%7D%2C%22InvertedCondition%22%3A%7B%7D%2C%22InvertedIfElse%22%3A%7B%7D%2C%22JavadocConsecutiveEmptyLines%22%3A%7B%7D%2C%22JavadocEmptyAuthorTag%22%3A%7B%7D%2C%22JavadocEmptyExceptionTag%22%3A%7B%7D%2C%22JavadocEmptyFirstLine%22%3A%7B%7D%2C%22JavadocEmptyLastLine%22%3A%7B%7D%2C%22JavadocEmptyParamTag%22%3A%7B%7D%2C%22JavadocEmptyReturnTag%22%3A%7B%7D%2C%22JavadocEmptySeeTag%22%3A%7B%7D%2C%22JavadocEmptySinceTag%22%3A%7B%7D%2C%22JavadocEmptyThrowsTag%22%3A%7B%7D%2C%22JavadocEmptyVersionTag%22%3A%7B%7D%2C%22JavadocMissingExceptionDescription%22%3A%7B%7D%2C%22JavadocMissingParamDescription%22%3A%7B%7D%2C%22JavadocMissingThrowsDescription%22%3A%7B%7D%2C%22JavaIoPackageAccess%22%3A%7B%7D%2C%22JdbcConnectionReference%22%3A%7B%7D%2C%22JdbcResultSetReference%22%3A%7B%7D%2C%22JdbcStatementReference%22%3A%7B%7D%2C%22JUnitAssertAlwaysFails%22%3A%7B%7D%2C%22JUnitAssertAlwaysSucceeds%22%3A%7B%7D%2C%22JUnitAssertEqualsConstantActualValue%22%3A%7B%7D%2C%22JUnitFailWithoutMessage%22%3A%7B%7D%2C%22JUnitLostTest%22%3A%7B%7D%2C%22JUnitPublicField%22%3A%7B%7D%2C%22JUnitPublicNonTestMethod%22%3A%7B%7D%2C%22JUnitPublicProperty%22%3A%7B%7D%2C%22JUnitSetUpCallsSuper%22%3A%7B%7D%2C%22JUnitStyleAssertions%22%3A%7B%7D%2C%22JUnitTearDownCallsSuper%22%3A%7B%7D%2C%22JUnitTestMethodWithoutAssert%22%3A%7B%7D%2C%22JUnitUnnecessarySetUp%22%3A%7B%7D%2C%22JUnitUnnecessaryTearDown%22%3A%7B%7D%2C%22JUnitUnnecessaryThrowsException%22%3A%7B%7D%2C%22LineLength%22%3A%7B%7D%2C%22LocaleSetDefault%22%3A%7B%7D%2C%22LoggerForDifferentClass%22%3A%7B%7D%2C%22LoggerWithWrongModifiers%22%3A%7B%7D%2C%22LoggingSwallowsStacktrace%22%3A%7B%7D%2C%22LongLiteralWithLowerCaseL%22%3A%7B%7D%2C%22MethodCount%22%3A%7B%7D%2C%22MethodName%22%3A%7B%7D%2C%22MethodParameterTypeRequired%22%3A%7B%7D%2C%22MethodReturnTypeRequired%22%3A%7B%7D%2C%22MethodSize%22%3A%7B%7D%2C%22MisorderedStaticImports%22%3A%7B%7D%2C%22MissingBlankLineAfterImports%22%3A%7B%7D%2C%22MissingBlankLineAfterPackage%22%3A%7B%7D%2C%22MissingBlankLineBeforeAnnotatedField%22%3A%7B%7D%2C%22MissingNewInThrowStatement%22%3A%7B%7D%2C%22MissingOverrideAnnotation%22%3A%7B%7D%2C%22MultipleLoggers%22%3A%7B%7D%2C%22MultipleUnaryOperators%22%3A%7B%7D%2C%22NestedBlockDepth%22%3A%7B%7D%2C%22NestedForLoop%22%3A%7B%7D%2C%22NestedSynchronization%22%3A%7B%7D%2C%22NoDef%22%3A%7B%22priority%22%3A3%7D%2C%22NoDouble%22%3A%7B%7D%2C%22NoFloat%22%3A%7B%7D%2C%22NoJavaUtilDate%22%3A%7B%7D%2C%22NonFinalPublicField%22%3A%7B%7D%2C%22NonFinalSubclassOfSensitiveInterface%22%3A%7B%7D%2C%22NoTabCharacter%22%3A%7B%7D%2C%22NoWildcardImports%22%3A%7B%7D%2C%22ObjectFinalize%22%3A%7B%7D%2C%22ObjectOverrideMisspelledMethodName%22%3A%7B%7D%2C%22OptionalCollectionReturnType%22%3A%7B%7D%2C%22OptionalField%22%3A%7B%7D%2C%22OptionalMethodParameter%22%3A%7B%7D%2C%22PackageName%22%3A%7B%7D%2C%22PackageNameMatchesFilePath%22%3A%7B%7D%2C%22ParameterAssignmentInFilterClosure%22%3A%7B%7D%2C%22ParameterCount%22%3A%7B%7D%2C%22ParameterName%22%3A%7B%7D%2C%22ParameterReassignment%22%3A%7B%7D%2C%22PrintStackTrace%22%3A%7B%7D%2C%22PrivateFieldCouldBeFinal%22%3A%7B%7D%2C%22PropertyName%22%3A%7B%7D%2C%22PublicFinalizeMethod%22%3A%7B%7D%2C%22PublicInstanceField%22%3A%7B%7D%2C%22PublicMethodsBeforeNonPublicMethods%22%3A%7B%7D%2C%22RandomDoubleCoercedToZero%22%3A%7B%7D%2C%22RemoveAllOnSelf%22%3A%7B%7D%2C%22RequiredRegex%22%3A%7B%7D%2C%22RequiredString%22%3A%7B%7D%2C%22ReturnFromFinallyBlock%22%3A%7B%7D%2C%22ReturnNullFromCatchBlock%22%3A%7B%7D%2C%22ReturnsNullInsteadOfEmptyArray%22%3A%7B%7D%2C%22ReturnsNullInsteadOfEmptyCollection%22%3A%7B%7D%2C%22SerializableClassMustDefineSerialVersionUID%22%3A%7B%7D%2C%22SerialPersistentFields%22%3A%7B%7D%2C%22SerialVersionUID%22%3A%7B%7D%2C%22SimpleDateFormatMissingLocale%22%3A%7B%7D%2C%22SpaceAfterCatch%22%3A%7B%7D%2C%22SpaceAfterClosingBrace%22%3A%7B%7D%2C%22SpaceAfterComma%22%3A%7B%7D%2C%22SpaceAfterFor%22%3A%7B%7D%2C%22SpaceAfterIf%22%3A%7B%7D%2C%22SpaceAfterMethodCallName%22%3A%7B%7D%2C%22SpaceAfterMethodDeclarationName%22%3A%7B%7D%2C%22SpaceAfterNotOperator%22%3A%7B%7D%2C%22SpaceAfterOpeningBrace%22%3A%7B%7D%2C%22SpaceAfterSemicolon%22%3A%7B%7D%2C%22SpaceAfterSwitch%22%3A%7B%7D%2C%22SpaceAfterWhile%22%3A%7B%7D%2C%22SpaceAroundClosureArrow%22%3A%7B%7D%2C%22SpaceAroundOperator%22%3A%7B%7D%2C%22SpaceBeforeClosingBrace%22%3A%7B%7D%2C%22SpaceBeforeOpeningBrace%22%3A%7B%7D%2C%22SpaceInsideParentheses%22%3A%7B%7D%2C%22SpockIgnoreRestUsed%22%3A%7B%7D%2C%22StatelessClass%22%3A%7B%7D%2C%22StatelessSingleton%22%3A%7B%7D%2C%22StaticCalendarField%22%3A%7B%7D%2C%22StaticConnection%22%3A%7B%7D%2C%22StaticDateFormatField%22%3A%7B%7D%2C%22StaticFieldsBeforeInstanceFields%22%3A%7B%7D%2C%22StaticMatcherField%22%3A%7B%7D%2C%22StaticMethodsBeforeInstanceMethods%22%3A%7B%7D%2C%22StaticSimpleDateFormatField%22%3A%7B%7D%2C%22SwallowThreadDeath%22%3A%7B%7D%2C%22SynchronizedMethod%22%3A%7B%7D%2C%22SynchronizedOnBoxedPrimitive%22%3A%7B%7D%2C%22SynchronizedOnGetClass%22%3A%7B%7D%2C%22SynchronizedOnReentrantLock%22%3A%7B%7D%2C%22SynchronizedOnString%22%3A%7B%7D%2C%22SynchronizedOnThis%22%3A%7B%7D%2C%22SynchronizedReadObjectMethod%22%3A%7B%7D%2C%22SystemErrPrint%22%3A%7B%7D%2C%22SystemExit%22%3A%7B%7D%2C%22SystemOutPrint%22%3A%7B%7D%2C%22SystemRunFinalizersOnExit%22%3A%7B%7D%2C%22TernaryCouldBeElvis%22%3A%7B%7D%2C%22ThisReferenceEscapesConstructor%22%3A%7B%7D%2C%22ThreadGroup%22%3A%7B%7D%2C%22ThreadLocalNotStaticFinal%22%3A%7B%7D%2C%22ThreadYield%22%3A%7B%7D%2C%22ThrowError%22%3A%7B%7D%2C%22ThrowException%22%3A%7B%22priority%22%3A3%7D%2C%22ThrowExceptionFromFinallyBlock%22%3A%7B%7D%2C%22ThrowNullPointerException%22%3A%7B%22priority%22%3A3%7D%2C%22ThrowRuntimeException%22%3A%7B%22priority%22%3A3%7D%2C%22ThrowThrowable%22%3A%7B%22priority%22%3A3%7D%2C%22ToStringReturnsNull%22%3A%7B%7D%2C%22TrailingWhitespace%22%3A%7B%7D%2C%22UnnecessaryBigDecimalInstantiation%22%3A%7B%7D%2C%22UnnecessaryBigIntegerInstantiation%22%3A%7B%7D%2C%22UnnecessaryBooleanExpression%22%3A%7B%7D%2C%22UnnecessaryBooleanInstantiation%22%3A%7B%7D%2C%22UnnecessaryCallForLastElement%22%3A%7B%7D%2C%22UnnecessaryCallToSubstring%22%3A%7B%7D%2C%22UnnecessaryCast%22%3A%7B%7D%2C%22UnnecessaryCatchBlock%22%3A%7B%7D%2C%22UnnecessaryCollectCall%22%3A%7B%7D%2C%22UnnecessaryCollectionCall%22%3A%7B%7D%2C%22UnnecessaryConstructor%22%3A%7B%7D%2C%22UnnecessaryDefInFieldDeclaration%22%3A%7B%7D%2C%22UnnecessaryDefInMethodDeclaration%22%3A%7B%7D%2C%22UnnecessaryDefInVariableDeclaration%22%3A%7B%7D%2C%22UnnecessaryDotClass%22%3A%7B%7D%2C%22UnnecessaryDoubleInstantiation%22%3A%7B%7D%2C%22UnnecessaryElseStatement%22%3A%7B%7D%2C%22UnnecessaryFail%22%3A%7B%7D%2C%22UnnecessaryFinalOnPrivateMethod%22%3A%7B%7D%2C%22UnnecessaryFloatInstantiation%22%3A%7B%7D%2C%22UnnecessaryGetter%22%3A%7B%7D%2C%22UnnecessaryGroovyImport%22%3A%7B%7D%2C%22UnnecessaryGString%22%3A%7B%7D%2C%22UnnecessaryIfStatement%22%3A%7B%7D%2C%22UnnecessaryInstanceOfCheck%22%3A%7B%7D%2C%22UnnecessaryInstantiationToGetClass%22%3A%7B%7D%2C%22UnnecessaryIntegerInstantiation%22%3A%7B%7D%2C%22UnnecessaryLongInstantiation%22%3A%7B%7D%2C%22UnnecessaryModOne%22%3A%7B%7D%2C%22UnnecessaryNullCheck%22%3A%7B%7D%2C%22UnnecessaryNullCheckBeforeInstanceOf%22%3A%7B%7D%2C%22UnnecessaryObjectReferences%22%3A%7B%7D%2C%22UnnecessaryOverridingMethod%22%3A%7B%7D%2C%22UnnecessaryPackageReference%22%3A%7B%7D%2C%22UnnecessaryParenthesesForMethodCallWithClosure%22%3A%7B%7D%2C%22UnnecessaryPublicModifier%22%3A%7B%7D%2C%22UnnecessarySafeNavigationOperator%22%3A%7B%7D%2C%22UnnecessarySelfAssignment%22%3A%7B%7D%2C%22UnnecessarySemicolon%22%3A%7B%7D%2C%22UnnecessarySetter%22%3A%7B%7D%2C%22UnnecessaryStringInstantiation%22%3A%7B%7D%2C%22UnnecessaryTernaryExpression%22%3A%7B%7D%2C%22UnnecessaryToString%22%3A%7B%7D%2C%22UnnecessaryTransientModifier%22%3A%7B%7D%2C%22UnsafeArrayDeclaration%22%3A%7B%7D%2C%22UnsafeImplementationAsMap%22%3A%7B%7D%2C%22UnusedArray%22%3A%7B%22priority%22%3A1%7D%2C%22UnusedImport%22%3A%7B%7D%2C%22UnusedMethodParameter%22%3A%7B%7D%2C%22UnusedObject%22%3A%7B%22priority%22%3A1%7D%2C%22UnusedPrivateField%22%3A%7B%22priority%22%3A1%7D%2C%22UnusedPrivateMethod%22%3A%7B%22priority%22%3A1%7D%2C%22UnusedPrivateMethodParameter%22%3A%7B%22priority%22%3A1%7D%2C%22UnusedVariable%22%3A%7B%22priority%22%3A1%7D%2C%22UseAssertEqualsInsteadOfAssertTrue%22%3A%7B%7D%2C%22UseAssertFalseInsteadOfNegation%22%3A%7B%7D%2C%22UseAssertNullInsteadOfAssertEquals%22%3A%7B%7D%2C%22UseAssertSameInsteadOfAssertTrue%22%3A%7B%7D%2C%22UseAssertTrueInsteadOfAssertEquals%22%3A%7B%7D%2C%22UseAssertTrueInsteadOfNegation%22%3A%7B%7D%2C%22UseCollectMany%22%3A%7B%7D%2C%22UseCollectNested%22%3A%7B%7D%2C%22UseOfNotifyMethod%22%3A%7B%7D%2C%22VariableName%22%3A%7B%7D%2C%22VariableTypeRequired%22%3A%7B%22priority%22%3A3%7D%2C%22VectorIsObsolete%22%3A%7B%7D%2C%22VolatileArrayField%22%3A%7B%7D%2C%22VolatileLongOrDoubleField%22%3A%7B%7D%2C%22WaitOutsideOfWhileLoop%22%3A%7B%7D%2C%22WhileStatementBraces%22%3A%7B%7D%7D -includes=**/Jenkinsfile -report=json:stdout
+
+Host: Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz, 1 cores, 1023M,  Windows Server 2022 , 64 bit Build 20348 (10.0.20348.2110)
+Time: Thu Mar 14 12:58:48 2024 Coordinated Universal Time elapsed time: 213.020919 seconds (0d 0h 3m 33s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002bfae871190):  JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=3900, stack(0x000000fbc9100000,0x000000fbc9200000)]
+
+
+Current CompileTask:
+C2: 213021 3204   !   4       java.util.concurrent.ConcurrentHashMap::computeIfAbsent (578 bytes)
+
+Stack: [0x000000fbc9100000,0x000000fbc9200000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x67d2c9]
+V  [jvm.dll+0x834afa]
+V  [jvm.dll+0x8365be]
+V  [jvm.dll+0x836c23]
+V  [jvm.dll+0x2477ff]
+V  [jvm.dll+0xac514]
+V  [jvm.dll+0xacb5c]
+V  [jvm.dll+0xac61b]
+V  [jvm.dll+0x6a2688]
+V  [jvm.dll+0x1a96c3]
+V  [jvm.dll+0x6a2fc0]
+V  [jvm.dll+0x1b6ea6]
+V  [jvm.dll+0x6a44c7]
+V  [jvm.dll+0x6a2f0a]
+V  [jvm.dll+0x2228e9]
+V  [jvm.dll+0x21b942]
+V  [jvm.dll+0x219201]
+V  [jvm.dll+0x1a502d]
+V  [jvm.dll+0x2290de]
+V  [jvm.dll+0x2272ac]
+V  [jvm.dll+0x7e9bb7]
+V  [jvm.dll+0x7e3fba]
+V  [jvm.dll+0x67c1b5]
+C  [ucrtbase.dll+0x26b4c]
+C  [KERNEL32.DLL+0x14de0]
+C  [ntdll.dll+0x7edab]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000002bfc4954270, length=12, elements={
+0x000002bfae66e6c0, 0x000002bfae854e40, 0x000002bfae855cc0, 0x000002bfae867b40,
+0x000002bfae86ab20, 0x000002bfae86d8b0, 0x000002bfae86f3e0, 0x000002bfae871190,
+0x000002bfae871c40, 0x000002bfae872de0, 0x000002bfc4976d40, 0x000002bfc4977bb0
+}
+
+Java Threads: ( => current thread )
+  0x000002bfae66e6c0 JavaThread "main" [_thread_in_native, id=2244, stack(0x000000fbc8900000,0x000000fbc8a00000)]
+  0x000002bfae854e40 JavaThread "Reference Handler" daemon [_thread_blocked, id=1352, stack(0x000000fbc8b00000,0x000000fbc8c00000)]
+  0x000002bfae855cc0 JavaThread "Finalizer" daemon [_thread_blocked, id=4112, stack(0x000000fbc8c00000,0x000000fbc8d00000)]
+  0x000002bfae867b40 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=5132, stack(0x000000fbc8d00000,0x000000fbc8e00000)]
+  0x000002bfae86ab20 JavaThread "Attach Listener" daemon [_thread_blocked, id=848, stack(0x000000fbc8e00000,0x000000fbc8f00000)]
+  0x000002bfae86d8b0 JavaThread "Service Thread" daemon [_thread_blocked, id=5460, stack(0x000000fbc8f00000,0x000000fbc9000000)]
+  0x000002bfae86f3e0 JavaThread "Monitor Deflation Thread" daemon [_thread_blocked, id=5452, stack(0x000000fbc9000000,0x000000fbc9100000)]
+=>0x000002bfae871190 JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=3900, stack(0x000000fbc9100000,0x000000fbc9200000)]
+  0x000002bfae871c40 JavaThread "C1 CompilerThread0" daemon [_thread_in_native, id=1832, stack(0x000000fbc9200000,0x000000fbc9300000)]
+  0x000002bfae872de0 JavaThread "Sweeper thread" daemon [_thread_blocked, id=3728, stack(0x000000fbc9300000,0x000000fbc9400000)]
+  0x000002bfc4976d40 JavaThread "Notification Thread" daemon [_thread_blocked, id=6100, stack(0x000000fbc9400000,0x000000fbc9500000)]
+  0x000002bfc4977bb0 JavaThread "Common-Cleaner" daemon [_thread_blocked, id=1288, stack(0x000000fbc9600000,0x000000fbc9700000)]
+
+Other Threads:
+  0x000002bfae84f680 VMThread "VM Thread" [stack: 0x000000fbc8a00000,0x000000fbc8b00000] [id=2476]
+  0x000002bfae87ece0 WatcherThread [stack: 0x000000fbc9500000,0x000000fbc9600000] [id=3948]
+
+Threads with active compile tasks:
+C2 CompilerThread0   213438 3204   !   4       java.util.concurrent.ConcurrentHashMap::computeIfAbsent (578 bytes)
+C1 CompilerThread0   213438 3207       3       java.beans.Introspector::addPropertyDescriptor (265 bytes)
+
+VM state: not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x0000000080000000, size: 2048 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x000002bfc5000000-0x000002bfc5a40000-0x000002bfc5a40000), size 10747904, SharedBaseAddress: 0x000002bfc5000000, ArchiveRelocationMode: 1.
+Compressed class space mapped at: 0x000002bfc6000000-0x000002c006000000, reserved size: 1073741824
+Narrow klass base: 0x000002bfc5000000, Narrow klass shift: 0, Narrow klass range: 0x100000000
+
+GC Precious Log:
+ CPUs: 1 total, 1 available
+ Memory: 1023M
+ Large Page Support: Disabled
+ NUMA Support: Disabled
+ Compressed Oops: Enabled (32-bit)
+ Heap Min Capacity: 256M
+ Heap Initial Capacity: 256M
+ Heap Max Capacity: 2G
+ Pre-touch: Disabled
+
+Heap:
+ def new generation   total 78720K, used 23743K [0x0000000080000000, 0x0000000085560000, 0x00000000aaaa0000)
+  eden space 70016K,  33% used [0x0000000080000000, 0x000000008172fd48, 0x0000000084460000)
+  from space 8704K,   0% used [0x0000000084460000, 0x0000000084460000, 0x0000000084ce0000)
+  to   space 8704K,   0% used [0x0000000084ce0000, 0x0000000084ce0000, 0x0000000085560000)
+ tenured generation   total 174784K, used 15079K [0x00000000aaaa0000, 0x00000000b5550000, 0x0000000100000000)
+   the space 174784K,   8% used [0x00000000aaaa0000, 0x00000000ab959cd8, 0x00000000ab959e00, 0x00000000b5550000)
+ Metaspace       used 24184K, committed 24576K, reserved 1114112K
+  class space    used 3026K, committed 3200K, reserved 1048576K
+
+Card table byte_map: [0x000002bfc4170000,0x000002bfc4580000] _byte_map_base: 0x000002bfc3d70000
+
+Polling page: 0x000002bfae880000
+
+Metaspace:
+
+Usage:
+  Non-class:     20.66 MB used.
+      Class:      2.96 MB used.
+       Both:     23.62 MB used.
+
+Virtual space:
+  Non-class space:       64.00 MB reserved,      20.88 MB ( 33%) committed,  1 nodes.
+      Class space:        1.00 GB reserved,       3.12 MB ( <1%) committed,  1 nodes.
+             Both:        1.06 GB reserved,      24.00 MB (  2%) committed. 
+
+Chunk freelists:
+   Non-Class:  11.11 MB
+       Class:  12.88 MB
+        Both:  23.99 MB
+
+MaxMetaspaceSize: unlimited
+CompressedClassSpaceSize: 1.00 GB
+Initial GC threshold: 21.00 MB
+Current GC threshold: 35.00 MB
+CDS: on
+MetaspaceReclaimPolicy: balanced
+ - commit_granule_bytes: 65536.
+ - commit_granule_words: 8192.
+ - virtual_space_node_default_size: 8388608.
+ - enlarge_chunks_in_place: 1.
+ - new_chunks_are_fully_committed: 0.
+ - uncommit_free_chunks: 1.
+ - use_allocation_guard: 0.
+ - handle_deallocations: 1.
+
+
+Internal statistics:
+
+num_allocs_failed_limit: 3.
+num_arena_births: 306.
+num_arena_deaths: 2.
+num_vsnodes_births: 2.
+num_vsnodes_deaths: 0.
+num_space_committed: 384.
+num_space_uncommitted: 0.
+num_chunks_returned_to_freelist: 5.
+num_chunks_taken_from_freelist: 1082.
+num_chunk_merges: 3.
+num_chunk_splits: 747.
+num_chunks_enlarged: 543.
+num_inconsistent_stats: 0.
+
+CodeHeap 'non-profiled nmethods': size=120064Kb used=1625Kb max_used=1625Kb free=118438Kb
+ bounds [0x000002bfbca50000, 0x000002bfbccc0000, 0x000002bfc3f90000]
+CodeHeap 'profiled nmethods': size=120000Kb used=5474Kb max_used=5474Kb free=114525Kb
+ bounds [0x000002bfb4f90000, 0x000002bfb54f0000, 0x000002bfbc4c0000]
+CodeHeap 'non-nmethods': size=5696Kb used=2254Kb max_used=2296Kb free=3441Kb
+ bounds [0x000002bfbc4c0000, 0x000002bfbc730000, 0x000002bfbca50000]
+ total_blobs=3858 nmethods=3096 adapters=675
+ compilation: enabled
+              stopped_count=0, restarted_count=0
+ full_count=0
+
+Compilation events (20 events):
+Event: 211.827 Thread 0x000002bfae871190 nmethod 3194 0x000002bfbcbe5290 code [0x000002bfbcbe5440, 0x000002bfbcbe58d8]
+Event: 211.828 Thread 0x000002bfae871c40 3195       3       java.lang.PublicMethods::toArray (76 bytes)
+Event: 211.828 Thread 0x000002bfae871c40 nmethod 3195 0x000002bfb54e3a10 code [0x000002bfb54e3c20, 0x000002bfb54e44d8]
+Event: 211.828 Thread 0x000002bfae871c40 3196       3       java.beans.FeatureDescriptor::<init> (137 bytes)
+Event: 211.829 Thread 0x000002bfae871c40 nmethod 3196 0x000002bfb54e4710 code [0x000002bfb54e4980, 0x000002bfb54e5578]
+Event: 211.830 Thread 0x000002bfae871190 3197       4       java.util.StringJoiner::<init> (63 bytes)
+Event: 211.832 Thread 0x000002bfae871190 nmethod 3197 0x000002bfbcbe5b90 code [0x000002bfbcbe5d20, 0x000002bfbcbe5f18]
+Event: 211.846 Thread 0x000002bfae871c40 3198       3       com.sun.beans.util.Cache$CacheEntry::matches (53 bytes)
+Event: 211.847 Thread 0x000002bfae871c40 nmethod 3198 0x000002bfb54e5910 code [0x000002bfb54e5ae0, 0x000002bfb54e5f98]
+Event: 211.847 Thread 0x000002bfae871c40 3199       3       java.util.TreeMap$EntryIterator::next (5 bytes)
+Event: 211.848 Thread 0x000002bfae871c40 nmethod 3199 0x000002bfb54e6110 code [0x000002bfb54e62c0, 0x000002bfb54e6448]
+Event: 211.848 Thread 0x000002bfae871c40 3200       3       java.util.Hashtable::<init> (114 bytes)
+Event: 211.849 Thread 0x000002bfae871190 3203       4       org.codehaus.groovy.reflection.CachedMethod::getReturnType (8 bytes)
+Event: 211.849 Thread 0x000002bfae871190 nmethod 3203 0x000002bfbcbe6190 code [0x000002bfbcbe6300, 0x000002bfbcbe6398]
+Event: 211.849 Thread 0x000002bfae871190 3204   !   4       java.util.concurrent.ConcurrentHashMap::computeIfAbsent (578 bytes)
+Event: 211.956 Thread 0x000002bfae871c40 nmethod 3200 0x000002bfb54e6510 code [0x000002bfb54e6840, 0x000002bfb54e7938]
+Event: 211.956 Thread 0x000002bfae871c40 3201  s    3       java.util.Hashtable::isEmpty (13 bytes)
+Event: 211.956 Thread 0x000002bfae871c40 nmethod 3201 0x000002bfb54e7f10 code [0x000002bfb54e80a0, 0x000002bfb54e82b8]
+Event: 211.956 Thread 0x000002bfae871c40 3202       3       java.util.Collections$SynchronizedCollection::iterator (10 bytes)
+Event: 211.956 Thread 0x000002bfae871c40 nmethod 3202 0x000002bfb54e8390 code [0x000002bfb54e8540, 0x000002bfb54e8708]
+
+GC Heap History (4 events):
+Event: 57.888 GC heap before
+{Heap before GC invocations=0 (full 0):
+ def new generation   total 78656K, used 69952K [0x0000000080000000, 0x0000000085550000, 0x00000000aaaa0000)
+  eden space 69952K, 100% used [0x0000000080000000, 0x0000000084450000, 0x0000000084450000)
+  from space 8704K,   0% used [0x0000000084450000, 0x0000000084450000, 0x0000000084cd0000)
+  to   space 8704K,   0% used [0x0000000084cd0000, 0x0000000084cd0000, 0x0000000085550000)
+ tenured generation   total 174784K, used 0K [0x00000000aaaa0000, 0x00000000b5550000, 0x0000000100000000)
+   the space 174784K,   0% used [0x00000000aaaa0000, 0x00000000aaaa0000, 0x00000000aaaa0200, 0x00000000b5550000)
+ Metaspace       used 15651K, committed 15936K, reserved 1114112K
+  class space    used 1763K, committed 1920K, reserved 1048576K
+}
+Event: 71.757 GC heap after
+{Heap after GC invocations=1 (full 0):
+ def new generation   total 78656K, used 8704K [0x0000000080000000, 0x0000000085550000, 0x00000000aaaa0000)
+  eden space 69952K,   0% used [0x0000000080000000, 0x0000000080000000, 0x0000000084450000)
+  from space 8704K, 100% used [0x0000000084cd0000, 0x0000000085550000, 0x0000000085550000)
+  to   space 8704K,   0% used [0x0000000084450000, 0x0000000084450000, 0x0000000084cd0000)
+ tenured generation   total 174784K, used 1298K [0x00000000aaaa0000, 0x00000000b5550000, 0x0000000100000000)
+   the space 174784K,   0% used [0x00000000aaaa0000, 0x00000000aabe4b80, 0x00000000aabe4c00, 0x00000000b5550000)
+ Metaspace       used 15651K, committed 15936K, reserved 1114112K
+  class space    used 1763K, committed 1920K, reserved 1048576K
+}
+Event: 171.613 GC heap before
+{Heap before GC invocations=1 (full 0):
+ def new generation   total 78656K, used 74055K [0x0000000080000000, 0x0000000085550000, 0x00000000aaaa0000)
+  eden space 69952K,  93% used [0x0000000080000000, 0x0000000083fd1f28, 0x0000000084450000)
+  from space 8704K, 100% used [0x0000000084cd0000, 0x0000000085550000, 0x0000000085550000)
+  to   space 8704K,   0% used [0x0000000084450000, 0x0000000084450000, 0x0000000084cd0000)
+ tenured generation   total 174784K, used 1298K [0x00000000aaaa0000, 0x00000000b5550000, 0x0000000100000000)
+   the space 174784K,   0% used [0x00000000aaaa0000, 0x00000000aabe4b80, 0x00000000aabe4c00, 0x00000000b5550000)
+ Metaspace       used 21190K, committed 21504K, reserved 1114112K
+  class space    used 2621K, committed 2752K, reserved 1048576K
+}
+Event: 176.646 GC heap after
+{Heap after GC invocations=2 (full 1):
+ def new generation   total 78720K, used 0K [0x0000000080000000, 0x0000000085560000, 0x00000000aaaa0000)
+  eden space 70016K,   0% used [0x0000000080000000, 0x0000000080000000, 0x0000000084460000)
+  from space 8704K,   0% used [0x0000000084460000, 0x0000000084460000, 0x0000000084ce0000)
+  to   space 8704K,   0% used [0x0000000084ce0000, 0x0000000084ce0000, 0x0000000085560000)
+ tenured generation   total 174784K, used 15079K [0x00000000aaaa0000, 0x00000000b5550000, 0x0000000100000000)
+   the space 174784K,   8% used [0x00000000aaaa0000, 0x00000000ab959cd8, 0x00000000ab959e00, 0x00000000b5550000)
+ Metaspace       used 21189K, committed 21504K, reserved 1114112K
+  class space    used 2621K, committed 2752K, reserved 1048576K
+}
+
+Dll operation events (7 events):
+Event: 1.002 Loaded shared library C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\java.dll
+Event: 2.023 Loaded shared library C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\jsvml.dll
+Event: 5.066 Loaded shared library C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\net.dll
+Event: 5.074 Loaded shared library C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\nio.dll
+Event: 6.602 Loaded shared library C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\zip.dll
+Event: 7.179 Loaded shared library C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\jimage.dll
+Event: 19.983 Loaded shared library C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\verify.dll
+
+Deoptimization events (20 events):
+Event: 198.366 Thread 0x000002bfae66e6c0 Uncommon trap: trap_request=0xffffffde fr.pc=0x000002bfbcbc03bc relative=0x000000000000035c
+Event: 198.366 Thread 0x000002bfae66e6c0 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000002bfbcbc03bc method=java.util.regex.Pattern$GroupTail.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 70 c2
+Event: 198.366 Thread 0x000002bfae66e6c0 DEOPT PACKING pc=0x000002bfbcbc03bc sp=0x000000fbc89fc850
+Event: 198.366 Thread 0x000002bfae66e6c0 DEOPT UNPACKING pc=0x000002bfbc5166a3 sp=0x000000fbc89fc7d0 mode 2
+Event: 206.197 Thread 0x000002bfae66e6c0 Uncommon trap: trap_request=0xffffffde fr.pc=0x000002bfbcb126e8 relative=0x0000000000000068
+Event: 206.197 Thread 0x000002bfae66e6c0 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000002bfbcb126e8 method=java.util.LinkedHashMap.afterNodeInsertion(Z)V @ 15 c2
+Event: 206.197 Thread 0x000002bfae66e6c0 DEOPT PACKING pc=0x000002bfbcb126e8 sp=0x000000fbc89fba20
+Event: 206.197 Thread 0x000002bfae66e6c0 DEOPT UNPACKING pc=0x000002bfbc5166a3 sp=0x000000fbc89fb998 mode 2
+Event: 206.353 Thread 0x000002bfae66e6c0 Uncommon trap: trap_request=0xffffffde fr.pc=0x000002bfbcb4c838 relative=0x0000000000000558
+Event: 206.353 Thread 0x000002bfae66e6c0 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000002bfbcb4c838 method=java.util.regex.Matcher.search(I)Z @ 121 c2
+Event: 206.353 Thread 0x000002bfae66e6c0 DEOPT PACKING pc=0x000002bfbcb4c838 sp=0x000000fbc89fb1c0
+Event: 206.353 Thread 0x000002bfae66e6c0 DEOPT UNPACKING pc=0x000002bfbc5166a3 sp=0x000000fbc89fb180 mode 2
+Event: 206.353 Thread 0x000002bfae66e6c0 Uncommon trap: trap_request=0xffffffc6 fr.pc=0x000002bfbcbc0ff0 relative=0x0000000000000230
+Event: 206.353 Thread 0x000002bfae66e6c0 Uncommon trap: reason=bimorphic_or_optimized_type_check action=maybe_recompile pc=0x000002bfbcbc0ff0 method=java.util.regex.Pattern$BmpCharProperty.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 19 c2
+Event: 206.353 Thread 0x000002bfae66e6c0 DEOPT PACKING pc=0x000002bfbcbc0ff0 sp=0x000000fbc89fb050
+Event: 206.353 Thread 0x000002bfae66e6c0 DEOPT UNPACKING pc=0x000002bfbc5166a3 sp=0x000000fbc89fb008 mode 2
+Event: 206.353 Thread 0x000002bfae66e6c0 Uncommon trap: trap_request=0xffffffc6 fr.pc=0x000002bfbcbc3a3c relative=0x00000000000004dc
+Event: 206.353 Thread 0x000002bfae66e6c0 Uncommon trap: reason=bimorphic_or_optimized_type_check action=maybe_recompile pc=0x000002bfbcbc3a3c method=java.util.regex.Pattern$GroupTail.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 70 c2
+Event: 206.353 Thread 0x000002bfae66e6c0 DEOPT PACKING pc=0x000002bfbcbc3a3c sp=0x000000fbc89fad20
+Event: 206.353 Thread 0x000002bfae66e6c0 DEOPT UNPACKING pc=0x000002bfbc5166a3 sp=0x000000fbc89facc0 mode 2
+
+Classes unloaded (1 events):
+Event: 174.663 Thread 0x000002bfae84f680 Unloading class 0x000002bfc619c000 'SC'
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (20 events):
+Event: 206.410 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x000000008133b868}: org/codenarc/rule/RuleBeanInfo> (0x000000008133b868) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.410 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x000000008133eca8}: org/codenarc/rule/RuleCustomizer> (0x000000008133eca8) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.425 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x0000000081373ac8}: org/codenarc/rule/design/AbstractClassWithoutAbstractMethodRuleBeanInfo> (0x0000000081373ac8) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.426 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x0000000081376ee0}: org/codenarc/rule/AbstractEnhanceableAstVisitorRuleBeanInfo> (0x0000000081376ee0) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.426 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x000000008137a020}: org/codenarc/rule/AbstractEnhanceableAstVisitorRuleCustomizer> (0x000000008137a020) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.427 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x0000000081383700}: org/codenarc/rule/design/AbstractClassWithoutAbstractMethodRuleCustomizer> (0x0000000081383700) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.437 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x00000000813b52f0}: org/codenarc/rule/design/AbstractClassWithPublicConstructorRuleBeanInfo> (0x00000000813b52f0) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.439 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x00000000813c48e8}: org/codenarc/rule/design/AbstractClassWithPublicConstructorRuleCustomizer> (0x00000000813c48e8) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.446 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x00000000813f4a98}: org/codenarc/rule/unnecessary/AddEmptyStringRuleBeanInfo> (0x00000000813f4a98) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.447 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x00000000813f79e0}: org/codenarc/rule/unnecessary/AddEmptyStringRuleCustomizer> (0x00000000813f79e0) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.454 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x0000000081427520}: org/codenarc/rule/basic/AssertWithinFinallyBlockRuleBeanInfo> (0x0000000081427520) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.455 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x000000008142a3d0}: org/codenarc/rule/basic/AssertWithinFinallyBlockRuleCustomizer> (0x000000008142a3d0) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.464 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x000000008145df80}: org/codenarc/rule/groovyism/AssignCollectionSortRuleBeanInfo> (0x000000008145df80) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.467 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x0000000081460ef8}: org/codenarc/rule/groovyism/AssignCollectionSortRuleCustomizer> (0x0000000081460ef8) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.473 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x00000000814918a0}: org/codenarc/rule/groovyism/AssignCollectionUniqueRuleBeanInfo> (0x00000000814918a0) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.473 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x0000000081494850}: org/codenarc/rule/groovyism/AssignCollectionUniqueRuleCustomizer> (0x0000000081494850) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.479 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x00000000814c5760}: org/codenarc/rule/basic/AssignmentInConditionalRuleBeanInfo> (0x00000000814c5760) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 206.479 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x00000000814c85f0}: org/codenarc/rule/basic/AssignmentInConditionalRuleCustomizer> (0x00000000814c85f0) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 211.820 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x00000000814f92e8}: org/codenarc/rule/design/AssignmentToStaticFieldFromInstanceMethodRuleBeanInfo> (0x00000000814f92e8) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+Event: 211.820 Thread 0x000002bfae66e6c0 Exception <a 'java/lang/ClassNotFoundException'{0x00000000814fc318}: org/codenarc/rule/design/AssignmentToStaticFieldFromInstanceMethodRuleCustomizer> (0x00000000814fc318) 
+thrown [s\src\hotspot\share\classfile\systemDictionary.cpp, line 256]
+
+VM Operations (20 events):
+Event: 165.601 Executing VM operation: Cleanup
+Event: 170.505 Executing VM operation: Cleanup done
+Event: 171.060 Executing VM operation: HandshakeAllThreads
+Event: 171.060 Executing VM operation: HandshakeAllThreads done
+Event: 171.613 Executing VM operation: CollectForMetadataAllocation
+Event: 176.654 Executing VM operation: CollectForMetadataAllocation done
+Event: 176.914 Executing VM operation: HandshakeAllThreads
+Event: 182.198 Executing VM operation: HandshakeAllThreads done
+Event: 183.198 Executing VM operation: Cleanup
+Event: 190.005 Executing VM operation: Cleanup done
+Event: 191.011 Executing VM operation: Cleanup
+Event: 191.011 Executing VM operation: Cleanup done
+Event: 197.940 Executing VM operation: HandshakeAllThreads
+Event: 197.940 Executing VM operation: HandshakeAllThreads done
+Event: 197.942 Executing VM operation: Cleanup
+Event: 197.942 Executing VM operation: Cleanup done
+Event: 200.492 Executing VM operation: Cleanup
+Event: 205.802 Executing VM operation: Cleanup done
+Event: 206.802 Executing VM operation: Cleanup
+Event: 206.802 Executing VM operation: Cleanup done
+
+Events (20 events):
+Event: 206.236 loading class java/io/ReaderBeanInfo
+Event: 206.236 loading class java/io/ReaderBeanInfo done
+Event: 206.236 loading class java/io/ReaderBeanInfo
+Event: 206.236 loading class java/io/ReaderBeanInfo done
+Event: 206.236 loading class java/io/ReaderCustomizer
+Event: 206.236 loading class java/io/ReaderCustomizer done
+Event: 206.236 loading class java/io/ReaderCustomizer
+Event: 206.236 loading class java/io/ReaderCustomizer done
+Event: 206.236 loading class java/io/StringReaderCustomizer
+Event: 206.236 loading class java/io/StringReaderCustomizer done
+Event: 206.238 loading class java/io/StringReaderCustomizer
+Event: 206.238 loading class java/io/StringReaderCustomizer done
+Event: 206.253 loading class java/nio/file/WatchService
+Event: 206.253 loading class java/nio/file/WatchService done
+Event: 206.253 loading class java/nio/file/WatchEvent$Kind
+Event: 206.253 loading class java/nio/file/WatchEvent$Kind done
+Event: 206.253 loading class java/nio/file/WatchEvent$Modifier
+Event: 206.253 loading class java/nio/file/WatchEvent$Modifier done
+Event: 206.253 loading class java/nio/file/WatchKey
+Event: 206.253 loading class java/nio/file/WatchKey done
+
+
+Dynamic libraries:
+0x00007ff631b70000 - 0x00007ff631b7e000 	C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\java.exe
+0x00007fff5ca00000 - 0x00007fff5cc02000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007fff5b310000 - 0x00007fff5b3ce000 	C:\Windows\System32\KERNEL32.DLL
+0x00007fff5a340000 - 0x00007fff5a6af000 	C:\Windows\System32\KERNELBASE.dll
+0x00007fff5a6e0000 - 0x00007fff5a7f0000 	C:\Windows\System32\ucrtbase.dll
+0x00007fff4cd80000 - 0x00007fff4cd97000 	C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\jli.dll
+0x00007fff4b080000 - 0x00007fff4b09b000 	C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\VCRUNTIME140.dll
+0x00007fff5b820000 - 0x00007fff5b9c5000 	C:\Windows\System32\USER32.dll
+0x00007fff5a6b0000 - 0x00007fff5a6d6000 	C:\Windows\System32\win32u.dll
+0x00007fff5ad50000 - 0x00007fff5ad7b000 	C:\Windows\System32\GDI32.dll
+0x00007fff5a100000 - 0x00007fff5a21b000 	C:\Windows\System32\gdi32full.dll
+0x00007fff5a2a0000 - 0x00007fff5a340000 	C:\Windows\System32\msvcp_win.dll
+0x00007fff461a0000 - 0x00007fff46444000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.20348.2110_none_947450d7eef395fd\COMCTL32.dll
+0x00007fff5aa60000 - 0x00007fff5ab03000 	C:\Windows\System32\msvcrt.dll
+0x00007fff5c130000 - 0x00007fff5c161000 	C:\Windows\System32\IMM32.DLL
+0x00007fff4d1e0000 - 0x00007fff4d1ec000 	C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\vcruntime140_1.dll
+0x00007fff4aff0000 - 0x00007fff4b07d000 	C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\msvcp140.dll
+0x00007fff2e650000 - 0x00007fff2f2b2000 	C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\server\jvm.dll
+0x00007fff5ab10000 - 0x00007fff5abc2000 	C:\Windows\System32\ADVAPI32.dll
+0x00007fff5c230000 - 0x00007fff5c2d2000 	C:\Windows\System32\sechost.dll
+0x00007fff5a0d0000 - 0x00007fff5a0f7000 	C:\Windows\System32\bcrypt.dll
+0x00007fff5ae50000 - 0x00007fff5af6f000 	C:\Windows\System32\RPCRT4.dll
+0x00007fff59e50000 - 0x00007fff59e9d000 	C:\Windows\SYSTEM32\POWRPROF.dll
+0x00007fff4bc20000 - 0x00007fff4bc29000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007fff5b170000 - 0x00007fff5b1e1000 	C:\Windows\System32\WS2_32.dll
+0x00007fff4ec50000 - 0x00007fff4ec77000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007fff4e230000 - 0x00007fff4e23a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007fff59e20000 - 0x00007fff59e33000 	C:\Windows\SYSTEM32\UMPDC.dll
+0x00007fff58910000 - 0x00007fff58927000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007fff4afe0000 - 0x00007fff4afea000 	C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\jimage.dll
+0x00007fff48500000 - 0x00007fff48712000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007fff48950000 - 0x00007fff48980000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007fff5a220000 - 0x00007fff5a29f000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007fff4ad50000 - 0x00007fff4ad75000 	C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\java.dll
+0x00007fff4ac70000 - 0x00007fff4ad47000 	C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\jsvml.dll
+0x00007fff5b9d0000 - 0x00007fff5c12a000 	C:\Windows\System32\SHELL32.dll
+0x00007fff4d9e0000 - 0x00007fff4e223000 	C:\Windows\SYSTEM32\windows.storage.dll
+0x00007fff5b3d0000 - 0x00007fff5b740000 	C:\Windows\System32\combase.dll
+0x00007fff5b080000 - 0x00007fff5b16a000 	C:\Windows\System32\SHCORE.dll
+0x00007fff5c170000 - 0x00007fff5c1cf000 	C:\Windows\System32\shlwapi.dll
+0x00007fff59ea0000 - 0x00007fff59ec5000 	C:\Windows\SYSTEM32\profapi.dll
+0x00007fff4ac50000 - 0x00007fff4ac69000 	C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\net.dll
+0x00007fff50080000 - 0x00007fff5018b000 	C:\Windows\SYSTEM32\WINHTTP.dll
+0x00007fff59480000 - 0x00007fff594e8000 	C:\Windows\system32\mswsock.dll
+0x00007fff4ac30000 - 0x00007fff4ac46000 	C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\nio.dll
+0x00007fff4abf0000 - 0x00007fff4ac08000 	C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\zip.dll
+0x00007fff4afd0000 - 0x00007fff4afe0000 	C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\verify.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.20348.2110_none_947450d7eef395fd;C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin\server
+
+VM Arguments:
+jvm_args: -Xms256m -Xmx2048m 
+java_command: c:\Users\Administrator\.vscode\extensions\nicolasvuillamy.vscode-groovy-lint-3.2.3\server\node_modules\npm-groovy-lint\lib/java/CodeNarcServer.jar --file C:\Users\ADMINI~1\AppData\Local\Temp\2\npm-groovy-lint\codeNarcTmpDir_0.6906741472646214\Jenkinsfile --parse -basedir=C:\Users\ADMINI~1\AppData\Local\Temp\2\npm-groovy-lint\codeNarcTmpDir_0.6906741472646214 -ruleset=%7B%22AbstractClassName%22%3A%7B%7D%2C%22AbstractClassWithoutAbstractMethod%22%3A%7B%7D%2C%22AbstractClassWithPublicConstructor%22%3A%7B%7D%2C%22AddEmptyString%22%3A%7B%7D%2C%22AssertWithinFinallyBlock%22%3A%7B%7D%2C%22AssignCollectionSort%22%3A%7B%7D%2C%22AssignCollectionUnique%22%3A%7B%7D%2C%22AssignmentInConditional%22%3A%7B%7D%2C%22AssignmentToStaticFieldFromInstanceMethod%22%3A%7B%7D%2C%22BigDecimalInstantiation%22%3A%7B%7D%2C%22BitwiseOperatorInConditional%22%3A%7B%7D%2C%22BlankLineBeforePackage%22%3A%7B%7D%2C%22BlockEndsWithBlankLine%22%3A%7B%7D%2C%22BlockStartsWithBlankLine%22%3A%7B%7D%2C%22BooleanGetBoolean%22%3A%7B%7D%2C%22BooleanMethodReturnsNull%22%3A%7B%7D%2C%22BracesForClass%22%3A%7B%22priority%22%3A3%7D%2C%22BracesForForLoop%22%3A%7B%22priority%22%3A3%7D%2C%22BracesForIfElse%22%3A%7B%22priority%22%3A3%7D%2C%22BracesForMethod%22%3A%7B%22priority%22%3A3%7D%2C%22BracesForTryCatchFinally%22%3A%7B%22priority%22%3A3%7D%2C%22BrokenNullCheck%22%3A%7B%7D%2C%22BrokenOddnessCheck%22%3A%7B%7D%2C%22BuilderMethodWithSideEffects%22%3A%7B%7D%2C%22BusyWait%22%3A%7B%7D%2C%22CatchArrayIndexOutOfBoundsException%22%3A%7B%7D%2C%22CatchError%22%3A%7B%7D%2C%22CatchException%22%3A%7B%7D%2C%22CatchIllegalMonitorStateException%22%3A%7B%7D%2C%22CatchIndexOutOfBoundsException%22%3A%7B%7D%2C%22CatchNullPointerException%22%3A%7B%7D%2C%22CatchRuntimeException%22%3A%7B%7D%2C%22CatchThrowable%22%3A%7B%7D%2C%22ChainedTest%22%3A%7B%7D%2C%22ClassEndsWithBlankLine%22%3A%7B%7D%2C%22ClassForName%22%3A%7B%7D%2C%22ClassJavadoc%22%3A%7B%7D%2C%22ClassName%22%3A%7B%7D%2C%22ClassNameSameAsFilename%22%3A%7B%7D%2C%22Cla
+java_class_path (initial): c:\Users\Administrator\.vscode\extensions\nicolasvuillamy.vscode-groovy-lint-3.2.3\server\node_modules\npm-groovy-lint\lib/java/CodeNarcServer.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 2                                         {product} {ergonomic}
+   size_t InitialHeapSize                          = 268435456                                 {product} {command line}
+   size_t MaxHeapSize                              = 2147483648                                {product} {command line}
+   size_t MaxNewSize                               = 715784192                                 {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 196608                                    {product} {ergonomic}
+   size_t MinHeapSize                              = 268435456                                 {product} {command line}
+   size_t NewSize                                  = 89456640                                  {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5826188                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122916026                              {pd product} {ergonomic}
+   size_t OldSize                                  = 178978816                                 {product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122916026                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 2147483648                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+     bool UseSerialGC                              = true                                      {product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre
+PATH=C:\Users\Administrator\.java-caller\jre\jdk-17.0.10+7-jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Amazon\cfn-bootstrap\;C:\Program Files\Git\cmd;C:\Users\Administrator\Desktop\Terraform;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\PuTTY\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 63 Stepping 2, GenuineIntel
+TMP=C:\Users\ADMINI~1\AppData\Local\Temp\2
+TEMP=C:\Users\ADMINI~1\AppData\Local\Temp\2
+
+
+
+Periodic native trim disabled
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows Server 2022 , 64 bit Build 20348 (10.0.20348.2110)
+OS uptime: 0 days 2:22 hours
+Xen hardware-assisted virtualization detected
+
+CPU: total 1 (initial active 1) (1 cores per cpu, 1 threads per core) family 6 model 63 stepping 2 microcode 0x49, cx8, cmov, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, avx, avx2, aes, erms, clmul, bmi1, bmi2, fma, vzeroupper, clflush, hv
+Processor Information for all 1 processors :
+  Max Mhz: 2400, Current Mhz: 2400, Mhz Limit: 2400
+
+Memory: 4k page, system-wide physical 1023M (52M free)
+TotalPageFile size 4863M (AvailPageFile size 8M)
+current process WorkingSet (physical memory assigned to process): 68M, peak: 154M
+current process commit charge ("private bytes"): 323M, peak: 337M
+
+vm_info: OpenJDK 64-Bit Server VM (17.0.10+7) for windows-amd64 JRE (17.0.10+7), built on Jan 16 2024 23:25:11 by "admin" with MS VC++ 16.10 / 16.11 (VS2019)
+
+END.

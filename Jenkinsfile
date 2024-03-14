@@ -23,17 +23,17 @@ pipeline {
                 echo "Unit Test is done here"
             }
         }
-        stage('Sonar Scanning') {
+        // stage('Sonar Scanning') {
+        //     steps {
+        //         echo "Sonar Qube Scanning"
+        //         sh 'ls -ltr'
+        //         sh 'sonar-scanner'
+        //     }
+        // }
+        stage('Build') {
             steps {
-                echo "Sonar Qube Scanning"
-                sh 'ls -ltr'
-                sh 'sonar-scanner'
-            }
-        }
-        stage('Deploying') {
-            steps {
-                echo "Deploying...."
-                
+                echo "Application Build"
+                sh 'zip catalogue.zip .'
             }
         }
     }
