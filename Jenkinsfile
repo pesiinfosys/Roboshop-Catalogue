@@ -12,6 +12,12 @@ pipeline {
         
     // }
     stages{
+        stage('clean_workspace_and_checkout_source') {
+            steps {
+                deleteDir()
+                // checkout scm
+            }
+        }
         stage('Install Dependencies') {
             steps {
                 echo "Installing Dependencies"
