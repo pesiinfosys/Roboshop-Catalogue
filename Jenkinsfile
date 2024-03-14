@@ -18,6 +18,17 @@ pipeline {
                 // checkout scm
             }
         }
+        stage('cloaning') {
+            steps {
+                git(
+                    url: "https://github.com/pesiinfosys/Roboshop-Catalogue.git",
+                    branch: "master",
+                    
+                    // changelog: true,
+                    // poll: true
+                )
+            }
+        }
         stage('Install Dependencies') {
             steps {
                 echo "Installing Dependencies"
