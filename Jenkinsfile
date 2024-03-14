@@ -33,7 +33,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Application Build"
-                sh 'zip -r catalogue.zip .'
+                sh 'zip -r catalogue.zip node_modules service.js package.json systemd.service'
             }
         }
     }
