@@ -14,8 +14,8 @@ pipeline {
     stages{
         stage('Install Dependencies') {
             steps {
-                // sh 'npm install'
                 echo "Installing Dependencies"
+                sh 'npm install'
             }
         }
         stage('Unit Testing') {
