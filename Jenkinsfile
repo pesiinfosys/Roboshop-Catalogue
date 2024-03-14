@@ -2,15 +2,15 @@ pipeline {
     agent{
         label 'Agent-1'
     }
-    options {
+    // options {
         
-    }
-    environment {
+    // }
+    // environment {
 
-    }
-    parameters{
+    // }
+    // parameters{
         
-    }
+    // }
     stages{
         stage('Install Dependencies') {
             steps {
@@ -24,7 +24,7 @@ pipeline {
             }
         }
     }
-    post {
+    // post {
         
-    }
+    // }
 }
