@@ -23,6 +23,13 @@ pipeline {
                 echo "Unit Test is done here"
             }
         }
+        stage('Sonar Scanning') {
+            steps {
+                echo "Sonar Qube Scanning"
+                sh 'ls -ltr'
+                sh 'sonar-scanner'
+            }
+        }
     }
     // post {
         
