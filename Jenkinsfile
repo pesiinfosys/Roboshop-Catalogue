@@ -64,7 +64,7 @@ pipeline {
                         repository: 'catalogue',
                         credentialsId: 'nexus-auth',
                         artifacts: [
-                            [artifactId: roboshop,
+                            [artifactId: 'roboshop',
                             classifier: '',
                             file: 'catalogue.zip',
                             type: 'zip']
