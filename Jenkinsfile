@@ -53,6 +53,26 @@ pipeline {
                 sh 'zip -r catalogue.zip node_modules service.js package.json systemd.service'
             }
         }
+        stage('artifact_upload') {
+            steps {
+                    nexusArtifactUploader(
+                        nexusVersion: 'nexus3',
+                        protocol: 'http',
+                        nexusUrl: '44.203.218.18:8081',
+                        groupId: 'com.roboshop',
+                        version: 1.0.0,
+                        repository: 'catalogue',
+                        credentialsId: 'nexus-auth',
+                        artifacts: [
+                            [artifactId: roboshop,
+                            classifier: '',
+                            file: 'catalogue.zip',
+                            type: 'zip']
+                        ]
+                    )
+            }
+        }
+        
     }
     // post {
         
