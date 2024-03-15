@@ -2,15 +2,7 @@ pipeline {
     agent{
         label 'NodeJS'
     }
-    // options {
-        
-    // }
-    // environment {
 
-    // }
-    // parameters{
-        
-    // }
     stages{
         stage('clean_workspace_and_checkout_source') {
             steps {
