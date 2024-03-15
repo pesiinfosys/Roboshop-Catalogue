@@ -51,7 +51,7 @@ pipeline {
             steps {
                 echo "Application Build"
                 sh 'ls -ltr'
-                sh 'zip -r catalogue.zip node_modules service.js package.json systemd.service'
+                sh 'zip -r catalogue.zip node_modules server.js package.json systemd.service'
             }
         }
         stage('artifact_upload') {
