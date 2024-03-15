@@ -50,6 +50,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Application Build"
+                sh 'ls -ltr'
                 sh 'zip -r catalogue.zip node_modules service.js package.json systemd.service'
             }
         }
